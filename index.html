@@ -164,10 +164,10 @@
   </head>
   <body class="body-bg">
     <!-- duyuru çalışması -->
-    <div class="acilir-pencere" id="acilirPencere">
+    <!-- <div class="acilir-pencere" id="acilirPencere">
       <p></p>
-      <img src="img/Gallery/kabe-3.jpg" alt="Açılır Pencere Resimi" />
-      <!-- <video controls autoplay width="100%" height="auto">
+      <img src="img/Gallery/kabe-3.jpg" alt="Açılır Pencere Resimi" /> -->
+    <!-- <video controls autoplay width="100%" height="auto">
     <source
       src="https://portalgo.policekes.com/content/uploads/videos/WhatsApp%20Video%202023-10-20%20at%2016-55099360-5.mp4"
       type="video/mp4"
@@ -175,11 +175,11 @@
     Tarayıcınız video etiketini desteklemiyor.
   </video> -->
 
-      <p>
+    <!-- <p>
         <button class="kapat-dugmesi" onclick="kapatPencere()">Kapat</button>
       </p>
     </div>
-    <div class="arka-plan-karart" id="arkaPlanKarart"></div>
+    <div class="arka-plan-karart" id="arkaPlanKarart"></div> -->
 
     <!-- duyuru çalışması -->
 
@@ -189,88 +189,109 @@
     </div>
 
     <!-- Navbar Start -->
-    <nav class="navbar sticky-top navbar-expand-lg bg p-0 navbar-bg">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-lg-4" href="https://www.example.com"
-          ><img
-            src="img/konya-güven-turizm-logo-yatay.png"
-            alt=""
-            style="width: 200px"
-        /></a>
+
+    <nav
+      class="navbar bg-light bsb-navbar bsb-navbar-caret navbar-bg navbar-expand-lg sticky-top p-0"
+    >
+      <div class="container position-relative justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="logo"
+            src="img/konya-güven-turizm-logo-yeni-çerçeveli.png"
+            alt="BootstrapBrain Logo"
+          />
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 position-absolute end-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i
+            style="font-size: 30px; color: rgb(0, 0, 0)"
+            class="bi bi-list"
+          ></i>
         </button>
         <div
-          class="collapse navbar-collapse"
-          id="navbarNavDropdown"
-          style="flex-grow: 0"
+          class="offcanvas offcanvas-end text-uppercase"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="active nb-link"
-                aria-current="page"
-                href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/"
-                >Ana Sayfa</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nb-link" href="#about">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nb-link"
-                href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/galeri.html"
-                >Galeri</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nb-link" href="#contact">İletişim</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="dropdown-toggle nb-link"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Hizmetlerimiz
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/hac.html"
-                    >Hac Turları</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/umre.html"
-                    >Umre Turları</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/kultur.html"
-                    >Kültür Turları</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <button class="btn-call">
-            <a class="page-link" href="tel:+90 532 478 4575">Hemen Ara</a>
-          </button>
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link active nb-link"
+                  aria-current="page"
+                  href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/"
+                  >Ana Sayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nb-link" href="#about">Hakkımızda</a>
+              </li>
+              <li class="nav-item me-lg-auto dropdown">
+                <a
+                  class="nav-link nb-link"
+                  href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/galeri.html"
+                  >Galeri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nb-link" href="#contact">İletişim</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle nb-link"
+                  href="#!"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Hizmetlerimiz</a
+                >
+                <ul
+                  class="dropdown-menu border-0 shadow bsb-zoomIn"
+                  aria-labelledby="servicesDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/hac.html"
+                      >Hac Turları</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/umre.html"
+                      >Umre Turları</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/kultur.html"
+                      >Kültür Turları</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <button class="btn-call">
+                <a class="page-link" href="tel:+90 532 478 4575">Hemen Ara</a>
+              </button>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -318,7 +339,7 @@
               autoplay
               muted
               loop
-              src="img/Gallery/mekah800.mp4"
+              src="img/Gallery/mekah (online-video-cutter.com).mp4"
               alt="..."
             ></video>
           </div>
@@ -364,29 +385,31 @@
           <h3 class="">Hakkımızda</h3>
           <div class="col-md-6 col-12 grid">
             <strong>Merhaba!</strong> <br />
-            Biz Güven Turizm olarak hem yurtiçi seyahatlerde hem de hac ve umre
-            turlarında unutulmaz anılar biriktirmeniz için buradayız. <br />
+            Biz Konya Güven Turizm olarak hem yurtiçi seyahatlerde hem de hac ve
+            umre turlarında unutulmaz anılar biriktirmeniz için buradayız.
+            <br />
             <br />
 
-            Güven Turizm, Türkiye'nin muhteşem güzelliklerini keşfetmek
+            Konya Güven Turizm, Türkiye'nin muhteşem güzelliklerini keşfetmek
             isteyenlere ek olarak, kutsal topraklarda manevi bir yolculuk yapmak
             isteyenlere de geniş bir hizmet yelpazesi sunmaktadır. <br />
             <br />
 
-            Güven Turizm ailesi olarak, her bir turumuzda sadece tatil değil,
-            aynı zamanda unutulmaz anılar sunmayı amaçlıyoruz. <br />
+            Konya Güven Turizm ailesi olarak, her bir turumuzda sadece tatil
+            değil, aynı zamanda unutulmaz anılar sunmayı amaçlıyoruz. <br />
             <br />
             Müşteri memnuniyeti ve güven, bizim için önceliktir. Yolculuklarınız
             boyunca sizlere en iyi hizmeti sunmak için buradayız. <br />
             <br />
 
-            Güven Turizm olarak, her geçen gün öğreniyor ve büyüyoruz. Sizlerin
-            talepleri doğrultusunda seyahat anlayışımızı geliştiriyoruz. <br />
+            Konya Güven Turizm olarak, her geçen gün öğreniyor ve büyüyoruz.
+            Sizlerin talepleri doğrultusunda seyahat anlayışımızı
+            geliştiriyoruz. <br />
             <br />
 
-            Bizimle keşfe çıkmaya hazır mısınız? Güven Turizm ailesiyle birlikte
-            hem yurtiçinde hem de kutsal topraklarda unutulmaz anılara yelken
-            açın!
+            Bizimle keşfe çıkmaya hazır mısınız? Konya Güven Turizm ailesiyle
+            birlikte hem yurtiçinde hem de kutsal topraklarda unutulmaz anılara
+            yelken açın!
           </div>
           <div class="col-md-6 col-12 mt-4 mt-md-0">
             <img class="img-fluid" src="img/Gallery/kabe-2.jpg" alt="" />
@@ -417,17 +440,7 @@
                 >
                   <div class="block-18 text-center">
                     <div class="text">
-                      <strong class="number" data-number="10">0</strong>
-                      <span>Yıllık Tecrübe</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-                >
-                  <div class="block-18 text-center">
-                    <div class="text">
-                      <strong class="number" data-number="10">0</strong>
+                      <strong class="number" data-number="1200">0</strong>
                       <span>Mutlu Müşteri</span>
                     </div>
                   </div>
@@ -437,18 +450,8 @@
                 >
                   <div class="block-18 text-center">
                     <div class="text">
-                      <strong class="number" data-number="10">0</strong>
-                      <span> Biten Proje </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-                >
-                  <div class="block-18 text-center">
-                    <div class="text">
-                      <strong class="number" data-number="10">0</strong>
-                      <span>Çalışılan Gün</span>
+                      <strong class="number" data-number="50">0</strong>
+                      <span> Giden Grup </span>
                     </div>
                   </div>
                 </div>
@@ -461,40 +464,40 @@
       <!-- Foto Gallery Class -->
       <div id="gallery" class="container padding">
         <h3>Fotoğraflar</h3>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/17.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/17.jpeg" alt=""
             /></a>
           </div>
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/2.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/2.jpeg" alt=""
             /></a>
           </div>
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/7.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/7.jpeg" alt=""
             /></a>
           </div>
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/4.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/4.jpeg" alt=""
             /></a>
           </div>
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/9.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/9.jpeg" alt=""
             /></a>
           </div>
           <div class="col-xl-4 col-md-6 col-12 ps-lg-0 ps-sm-2 py-2 animated">
-            <a href="img/Gallery/kabe-1.jpg" data-fslightbox="gallery"
-              ><img class="img-fluid" src="img/Gallery/kabe-1.jpg" alt=""
+            <a href="img/Gallery/14.jpeg" data-fslightbox="gallery"
+              ><img class="img-fluid" src="img/Gallery/14.jpeg" alt=""
             /></a>
           </div>
         </div>
       </div>
-      <!-- Video Gallery -->
+      <!-- Video Gallery 
       <div class="container padding animated">
         <h3>Videolar</h3>
         <div class="row">
@@ -540,7 +543,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Contact Class-->
       <div id="contact" class="container padding animated">
         <h3>Iletisim</h3>
@@ -562,8 +565,8 @@
             <div class="row">
               <div class="col-12 col-lg-4">
                 <img
-                  src="img/konya-güven-turizm-logo-yatay.png"
-                  style="width: 150px; height: 100px"
+                  src="img/konya-güven-turizm-logo-yeni-çerçeveli.png"
+                  style="width: 150px; height: 150px"
                   alt="Firma Logo"
                 />
               </div>
@@ -581,7 +584,7 @@
                   <div class="email mt-4">
                     <i class="bi bi-envelope"></i>
                     <h4>Email:</h4>
-                    <p>exwKm@example.com</p>
+                    <p>konyaguventur@gmail.com</p>
                   </div>
 
                   <div class="phone mt-4">
@@ -705,8 +708,8 @@
             >
             <br />
             <strong
-              ><a class="page-link" href="mailto:WJUeh@example.com">
-                WJUeh@example.com</a
+              ><a class="page-link" href="mailto:konyaguventur@gmail.com">
+                konyaguventur@gmail.com</a
               ></strong
             >
           </div>

@@ -1,16 +1,6 @@
 .body-bg {
   background-color: #ffff;
 }
-/* .animated {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.animated.fadeInUp {
-  opacity: 1;
-  transform: translateY(0);
-} */
 
 .animated {
   opacity: 0;
@@ -20,7 +10,7 @@
 .animated.visible {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
 }
 
 .loader {
@@ -60,6 +50,8 @@
 
 .navbar-bg {
   background-color: #ffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  height: 90px;
 }
 
 .btn-call {
@@ -107,6 +99,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  align-items: center;
 }
 
 .list-unstyled {
@@ -117,9 +110,8 @@ ul {
   color: #805b10;
   font-size: 17px;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 5px 10px;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   position: relative;
   transition: all 0.5s;
 }
@@ -202,11 +194,11 @@ ul {
 }
 
 .carousel-height {
-  height: 400px;
+  height: 500px;
 }
 
 .carousel-height img {
-  height: 400px; /* Bilgisayar boyutu için yükseklik sınırlaması */
+  height: 500px; /* Bilgisayar boyutu için yükseklik sınırlaması */
   width: 100%;
 }
 
@@ -215,18 +207,37 @@ ul {
   width: 100%;
 }
 
+.logo {
+  width: 150px;
+}
+
+#gallery .animated {
+  height: 225px;
+  width: 420px;
+}
+
 @media only screen and (max-width: 767px) {
   .carousel-height {
     height: 200px;
   }
-  .carousel-height img,
-  .carousel-height video {
+  .carousel-height img {
     height: 200px;
+  }
+  .carousel-height video {
+    height: 100%;
+  }
+  .logo {
+    width: 130px;
+  }
+  .navbar-bg {
+    height: 70px;
   }
 }
 
 .animated a img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .padding {
@@ -267,6 +278,23 @@ h3 {
 
 .footer-bg {
   background-color: #fff;
+}
+
+.navbar-nav li {
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+}
+
+.bsb-navbar:not(.bsb-navbar-caret) .dropdown-toggle:after {
+  display: none;
+}
+
+nav img {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
 }
 /* ertunc */
 /*

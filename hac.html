@@ -110,88 +110,108 @@
     </div>
 
     <!-- Navbar Start -->
-    <nav class="navbar sticky-top navbar-expand-lg bg p-0 navbar-bg">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-lg-4" href="/index.html"
-          ><img
-            src="img/konya-güven-turizm-logo-yatay.png"
-            alt=""
-            style="width: 200px"
-        /></a>
+    <nav
+      class="navbar bg-light bsb-navbar bsb-navbar-caret navbar-bg navbar-expand-lg sticky-top p-0"
+    >
+      <div class="container position-relative justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="logo"
+            src="img/konya-güven-turizm-logo-yeni-çerçeveli.png"
+            alt="BootstrapBrain Logo"
+          />
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 position-absolute end-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i
+            style="font-size: 30px; color: rgb(0, 0, 0)"
+            class="bi bi-list"
+          ></i>
         </button>
         <div
-          class="collapse navbar-collapse"
-          id="navbarNavDropdown"
-          style="flex-grow: 0"
+          class="offcanvas offcanvas-end text-uppercase"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="active nb-link"
-                aria-current="page"
-                href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/"
-                >Ana Sayfa</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nb-link" href="index.html#about">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nb-link"
-                href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/galeri.html"
-                >Galeri</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nb-link" href="index.html#contact">İletişim</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="dropdown-toggle nb-link"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Hizmetlerimiz
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/hac.html"
-                    >Hac Turları</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/umre.html"
-                    >Umre Turları</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item m-0 nb-link"
-                    href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/kultur.html"
-                    >Kültür Turları</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <button class="btn-call">
-            <a class="page-link" href="tel:+90 532 478 4575">Hemen Ara</a>
-          </button>
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link active nb-link"
+                  aria-current="page"
+                  href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/"
+                  >Ana Sayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nb-link" href="#about">Hakkımızda</a>
+              </li>
+              <li class="nav-item me-lg-auto dropdown">
+                <a
+                  class="nav-link nb-link"
+                  href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/galeri.html"
+                  >Galeri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nb-link" href="#contact">İletişim</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle nb-link"
+                  href="#!"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Hizmetlerimiz</a
+                >
+                <ul
+                  class="dropdown-menu border-0 shadow bsb-zoomIn"
+                  aria-labelledby="servicesDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/hac.html"
+                      >Hac Turları</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/umre.html"
+                      >Umre Turları</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nb-link"
+                      href="https://muhammedselimkirikkovali.github.io/GuvenTurizm/kultur.html"
+                      >Kültür Turları</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <button class="btn-call">
+                <a class="page-link" href="tel:+90 532 478 4575">Hemen Ara</a>
+              </button>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -237,7 +257,7 @@
               autoplay
               muted
               loop
-              src="img/Gallery/mekah800.mp4"
+              src="img/Gallery/mekah (online-video-cutter.com).mp4"
               alt="..."
             ></video>
           </div>
@@ -303,8 +323,8 @@
             >
             <br />
             <strong
-              ><a class="page-link" href="mailto:WJUeh@example.com">
-                WJUeh@example.com</a
+              ><a class="page-link" href="mailto:konyaguventur@gmail.com">
+                konyaguventur@gmail.com</a
               ></strong
             >
           </div>
