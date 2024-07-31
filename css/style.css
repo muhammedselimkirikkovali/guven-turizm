@@ -2,6 +2,62 @@
   background-color: #ffff;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.acilir-pencere {
+  display: none;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 600px;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  margin-right: auto;
+}
+
+.acilir-pencere img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.arka-plan-karart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+  display: none;
+  z-index: 999; /* Duyuru penceresinden daha düşük z-index */
+}
+
+/* Mobil Ekran Ayarları Start */
+@media only screen and (max-width: 600px) {
+  .acilir-pencere {
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+.kapat-dugmesi {
+  background-color: #f84914;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Mobil Ekran Ayarları End */
+
 .animated {
   opacity: 0;
   transform: translateY(20px);
@@ -296,6 +352,26 @@ nav img {
   left: 50%;
   transform: translate(-50%, -25%);
 }
+
+.clients {
+  background: #f7f6dc;
+  display: flex;
+  align-items: center;
+  height: 220px;
+}
+
+.clients .item {
+  text-align: center;
+  width: 98%;
+  height: 200px;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* ertunc */
 /*
  * Bootstrap v4.1.0 (https://getbootstrap.com/)

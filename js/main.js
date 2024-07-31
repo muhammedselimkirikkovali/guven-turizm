@@ -363,3 +363,24 @@ document.addEventListener("DOMContentLoaded", function () {
     autoclose: true,
   });
 })(jQuery);
+
+$("#client").owlCarousel({
+  items: 2,
+  loop: true,
+  smartSpeed: 1000,
+  autoplay: true,
+  dots: false,
+  autoplayHoverPause: false,
+  responsive: {
+    0: {
+      items: 2,
+    },
+  },
+});
+
+$(".play").on("click", function () {
+  owl.trigger("play.owl.autoplay", [1000]);
+});
+$(".stop").on("click", function () {
+  owl.trigger("stop.owl.autoplay");
+});
