@@ -288,6 +288,15 @@ ul {
   .navbar-bg {
     height: 70px;
   }
+  .item img {
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item img {
+    object-fit: cover;
+  }
 }
 
 .animated a img {
@@ -369,7 +378,6 @@ nav img {
 .item img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 /* ertunc */
